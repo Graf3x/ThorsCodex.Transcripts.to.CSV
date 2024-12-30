@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ThorsCodex.Transcripts.to.CSV": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
