@@ -64,7 +64,7 @@ class Program
                     if (track != null)
                     {
                         // Download the actual captions
-                        var closedCaptions = await youtube.Videos.ClosedCaptions.GetAsync(track);
+                        YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionTrack closedCaptions = await youtube.Videos.ClosedCaptions.GetAsync(track);
                         var transcriptEntries = new List<TranscriptEntry>();
 
                         foreach (var caption in closedCaptions.Captions)
