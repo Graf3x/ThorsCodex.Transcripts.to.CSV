@@ -6,11 +6,15 @@ Quick tool to grab transcripts from YouTube and dump them to CSV.
 
 1. Clone the repository.
 2. Install the required NuGet packages:
-	`dotnet add package McMaster.Extensions.CommandLineUtils`
-	`dotnet add package YoutubeExplode` 
-	`dotnet add package CsvHelper`
+```sh
+	dotnet add package McMaster.Extensions.CommandLineUtils
+	dotnet add package YoutubeExplode
+	dotnet add package CsvHelper
+```
 3. Build the project:
-	`dotnet build`
+```sh
+	dotnet build
+```
 ### Usage
 
 This tool fetches videos from a specified YouTube channel, processes the closed captions, and saves them as CSV files. It uses command line arguments to specify the channel URL, output directory, length cutoff for videos, and YouTube handle name.
@@ -23,7 +27,9 @@ This tool fetches videos from a specified YouTube channel, processes the closed 
 - `-h` or `--handle`: The YouTube handle name (default: `PirateSoftware`)
 
 ### Example
-`dotnet run --url "https://www.youtube.com/@PirateSoftware" --output "S:\Transcripts" --length "01:03:00" --handle "PirateSoftware"`
+```sh
+dotnet run --url "https://www.youtube.com/@PirateSoftware" --output "S:\Transcripts" --length "01:03:00" --handle "PirateSoftware"
+```
 
 ### Contributing
 
